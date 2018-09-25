@@ -1,0 +1,418 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: normal;
+}
+
+/*Common styles*/
+a {
+  text-decoration: none;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.button {
+  font-family: 'Source Sans Pro';
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+  border-radius: 2px;
+  padding: 17px 20px 0;
+  display: inline-block;
+  color: #ffffff;
+  background: #c83691;
+  line-height: 12px;
+  box-sizing: border-box;
+}
+
+.button--big {
+  padding: 25px 45px 13px;
+  font-size: 1rem;
+  line-height: 0.75;
+  letter-spacing: 0.7px;
+  width: 100%;
+  max-width: 243px;
+}
+
+.button:hover {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.23)), to(rgba(0, 0, 0, 0.15))) #d749a2;
+  background: linear-gradient(-180deg, rgba(255, 255, 255, 0.23) 0%, rgba(0, 0, 0, 0.15) 100%) #d749a2;
+}
+
+/*Header styles*/
+#header {
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  color: #ffffff;
+}
+
+#header #nav-bar {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  /*Logo Styles*/
+  /*End of Logo Styles*/
+}
+
+#header #nav-bar #logo {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-flex;
+  display: inline-flex;
+  padding: 23px 15px 24px 15px;
+  margin-left: -15px;
+  z-index: 2;
+}
+
+#header #nav-bar #logo #icon-logo {
+  width: 140px;
+  height: 30px;
+}
+
+#header #nav-bar #logo span {
+  font-family: "Gotham Book";
+  font-size: 18px;
+  letter-spacing: -1px;
+  line-height: 1.45;
+  margin-left: 6px;
+  white-space: nowrap;
+  color: #ffffff;
+}
+
+#header #nav-bar .hamburger {
+  display: none;
+}
+
+#header #nav-bar .menu {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: row wrap;
+}
+
+#header #nav-bar .menu li {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-flex;
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+#header #nav-bar .menu li:nth-of-type(1) {
+  font-family: "Gotham Medium";
+}
+
+#header #nav-bar .menu li:nth-of-type(2) {
+  font-family: "Gotham Book";
+}
+
+#header #nav-bar .menu li + li {
+  margin-left: 20px;
+}
+
+#header #nav-bar .menu a {
+  padding: 20px 5px;
+  color: #ffffff;
+}
+
+#header #nav-bar .menu .menu__button {
+  font-family: 'Source Sans Pro';
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  width: 151px;
+  border-radius: 2px;
+  padding: 12px 25px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+#header .separator {
+  border-bottom: 1px solid #e8e8e8;
+  width: 100%;
+  opacity: 0.4;
+}
+
+/*Hero section styles*/
+#hero-section {
+  min-height: 760px;
+  background: url(../images/hero-section-bg.jpg) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+}
+
+#hero-section .content-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  padding: 373px 0 50px;
+}
+
+#hero-section .content-container h1 {
+  color: #ffffff;
+  font-family: "Gotham Book";
+  font-size: 3.4375rem;
+  letter-spacing: -1px;
+  line-height: 70px;
+}
+
+#hero-section .content-container h1 span {
+  font-family: "Gotham Medium";
+}
+
+#hero-section .content-container .button-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 505px;
+}
+
+#hero-section .content-container .button-wrapper .button--big {
+  margin-top: 45px;
+}
+
+/* MEDIA QUERIES*/
+@media all and (max-width: 1200px) {
+  .content-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #hero-section .content-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #header #nav-bar {
+    /* Hamburger icon and mobile menu styles*/
+    /* End of Hamburger icon and mobile menu styles*/
+  }
+  #header #nav-bar .hamburger {
+    display: -webkit-flex;
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    outline-style: none;
+  }
+  #header #nav-bar .hamburger--stand {
+    position: absolute;
+    top: 10px;
+    right: 4px;
+  }
+  #header #nav-bar .menu {
+    display: none;
+    background-color: #2c2e83;
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 30px;
+    flex-flow: column nowrap;
+    transform: translateX(-50%);
+    overflow: auto;
+    min-height: 30vh;
+  }
+  #header #nav-bar .menu li {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+  #header #nav-bar .menu li + li {
+    margin: 0;
+  }
+  #header #nav-bar .menu a {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  #header #nav-bar .menu .menu__button {
+    background: #c83691;
+    border: none;
+  }
+  #header #nav-bar .active {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+}
+
+@media all and (max-width: 575px) {
+  html {
+    font-size: 70%;
+  }
+  #header #nav-bar #logo #icon-logo {
+    width: 110px;
+  }
+  #header #nav-bar #logo span {
+    line-height: 1.9;
+    font-size: 14px;
+  }
+  #hero-section .content-container .button-wrapper {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}
+
+/* END OF MEDIA QUERIES*/
+/*! Hamburger menu styles*/
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, -webkit-filter;
+  transition-property: opacity, filter;
+  transition-property: opacity, filter, -webkit-filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 40px;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block;
+}
+
+.hamburger-inner::before {
+  top: -10px;
+}
+
+.hamburger-inner::after {
+  bottom: -10px;
+}
+
+/* Stand */
+.hamburger--stand .hamburger-inner {
+  transition: background-color 0s 0.1s linear, -webkit-transform 0.1s 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.1s 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19), background-color 0s 0.1s linear;
+  transition: transform 0.1s 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19), background-color 0s 0.1s linear, -webkit-transform 0.1s 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--stand .hamburger-inner::before {
+  transition: top 0.1s 0.1s ease-in, -webkit-transform 0.1s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.1s 0.1s ease-in, transform 0.1s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.1s 0.1s ease-in, transform 0.1s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.1s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--stand .hamburger-inner::after {
+  transition: bottom 0.1s 0.1s ease-in, -webkit-transform 0.1s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.1s 0.1s ease-in, transform 0.1s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.1s 0.1s ease-in, transform 0.1s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.1s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--stand.is-active .hamburger-inner {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background-color: transparent;
+  transition: background-color 0s 0.22s linear, -webkit-transform 0.1s 0s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: transform 0.1s 0s cubic-bezier(0.215, 0.61, 0.355, 1), background-color 0s 0.22s linear;
+  transition: transform 0.1s 0s cubic-bezier(0.215, 0.61, 0.355, 1), background-color 0s 0.22s linear, -webkit-transform 0.1s 0s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger--stand.is-active .hamburger-inner::before {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  transition: top 0.1s 0.12s ease-out, -webkit-transform 0.1s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.1s 0.12s ease-out, transform 0.1s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.1s 0.12s ease-out, transform 0.1s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.1s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger--stand.is-active .hamburger-inner::after {
+  bottom: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition: bottom 0.1s 0.12s ease-out, -webkit-transform 0.1s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.1s 0.12s ease-out, transform 0.1s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.1s 0.12s ease-out, transform 0.1s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.1s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/* End of Hamburger menu styles */
