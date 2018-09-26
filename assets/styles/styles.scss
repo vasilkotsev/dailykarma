@@ -413,6 +413,50 @@ h3 {
 }
 
 
+/* Statistic-section styles */
+
+#statistic-section {
+    background: url("../images/CF_home_partners.jpg") no-repeat center;
+    padding: 150px 0;
+    position: relative;
+
+    p {
+        font-family: "Gotham Medium";
+        color: $primary-color;
+        font-size: 2rem;
+        letter-spacing: -0.9px;
+        line-height: 1.9;
+
+        span {
+            border-bottom: 8px solid rgba(255,255,255,0.35);
+            padding-bottom: 10px;
+        }
+    }
+
+    .logo-badge-holder {
+        display: flex;
+        width: 103px;
+        height: 103px;
+        background-color: #F7F7F7;
+        border-radius: 50%;
+        margin: auto;
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translate(-50%,-50%);
+        
+        .logo-badge {
+            height: 47px;
+            width: 64px;
+            margin: auto;
+        }
+    }
+
+    
+
+
+}
+
 /* MEDIA QUERIES*/
 
 @media all and (max-width: 1200px) {
@@ -584,6 +628,20 @@ h3 {
 
             .donors {
                 transform: translate(0, -45%);
+            }
+        }
+    }
+
+    #statistic-section {
+        padding: 100px 0;
+
+        .logo-badge-holder {
+            width: 50px;
+            height: 50px; 
+
+            .logo-badge {
+                height: auto;
+                width: 35px;
             }
         }
     }
