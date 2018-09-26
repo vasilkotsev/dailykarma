@@ -12,6 +12,37 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  color: #ffffff;
+  font-family: "Gotham Book";
+  font-size: 3.4375rem;
+  letter-spacing: -1px;
+  line-height: 70px;
+}
+
+h1 span {
+  font-family: "Gotham Medium";
+}
+
+h2 {
+  font-family: 'Source Sans Pro';
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  color: #6b4895;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Gotham Light';
+  font-size: 2rem;
+  line-height: 38px;
+  color: #6b4895;
+  letter-spacing: -1.5px;
+}
+
 .content-wrapper {
   width: 100%;
   max-width: 1000px;
@@ -35,7 +66,7 @@ a {
   box-sizing: border-box;
 }
 
-.button--big {
+.button--primary {
   padding: 25px 45px 13px;
   font-size: 1rem;
   line-height: 0.75;
@@ -44,15 +75,91 @@ a {
   max-width: 243px;
 }
 
+.button--secondary {
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 144px;
+  padding-bottom: 5px;
+}
+
 .button:hover {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.2);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.23)), to(rgba(0, 0, 0, 0.15))) #d749a2;
   background: linear-gradient(-180deg, rgba(255, 255, 255, 0.23) 0%, rgba(0, 0, 0, 0.15) 100%) #d749a2;
 }
 
+.donors {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: nowrap;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: solid 1px #e1e1e1;
+  padding: 8px 9px;
+  color: #080808;
+}
+
+.donors .donors__number {
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.donors .donors__text {
+  opacity: 0.5;
+  font-size: 11px;
+  margin-top: 3px;
+}
+
+.donors .donors__images-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.donors .donors__images-wrapper .donors__images-wrapper__image {
+  height: 29px;
+  width: 29px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.donors .donors__images-wrapper .image-1 {
+  transform: translateX(120%);
+  z-index: 5;
+}
+
+.donors .donors__images-wrapper .image-2 {
+  transform: translateX(100%);
+  z-index: 4;
+}
+
+.donors .donors__images-wrapper .image-3 {
+  transform: translateX(80%);
+  z-index: 3;
+}
+
+.donors .donors__images-wrapper .image-4 {
+  transform: translateX(60%);
+  z-index: 2;
+}
+
+.donors .donors__images-wrapper .image-5 {
+  transform: translateX(40%);
+  z-index: 1;
+}
+
+.donors .donors__images-wrapper .image-6 {
+  transform: translateX(20%);
+}
+
 /*Header styles*/
 #header {
-  position: fixed;
+  position: absolute;
   margin: auto;
   width: 100%;
   color: #ffffff;
@@ -178,18 +285,6 @@ a {
   padding: 373px 0 50px;
 }
 
-#hero-section .content-container h1 {
-  color: #ffffff;
-  font-family: "Gotham Book";
-  font-size: 3.4375rem;
-  letter-spacing: -1px;
-  line-height: 70px;
-}
-
-#hero-section .content-container h1 span {
-  font-family: "Gotham Medium";
-}
-
 #hero-section .content-container .button-wrapper {
   display: -webkit-box;
   display: -moz-box;
@@ -202,8 +297,112 @@ a {
   max-width: 505px;
 }
 
-#hero-section .content-container .button-wrapper .button--big {
+#hero-section .content-container .button-wrapper .button--primary {
   margin-top: 45px;
+}
+
+/* Description section styles*/
+#description-section {
+  padding: 15px 0 120px;
+}
+
+#description-section .content-wrapper {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+#description-section .description-container {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 35px;
+}
+
+#description-section .description-container:nth-child(even) {
+  flex-flow: row-reverse wrap;
+}
+
+#description-section .description-container:nth-child(even) .info-block {
+  padding-right: 60px;
+}
+
+#description-section .description-container:nth-child(even) .button {
+  margin: 0;
+}
+
+#description-section .description-container h2 {
+  width: 170px;
+}
+
+#description-section .description-container h3 {
+  margin-top: 15px;
+}
+
+#description-section .info-block {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 50%;
+  margin-top: 50px;
+  padding-right: 40px;
+}
+
+#description-section .info-block p, #description-section .info-block ul {
+  font-size: 1.1250em;
+  letter-spacing: 0;
+  color: #585858;
+  line-height: 30px;
+  font-weight: 400;
+  margin-top: 16px;
+}
+
+#description-section .info-block .button {
+  margin-top: 30px;
+}
+
+#description-section .info-block .fa-check {
+  color: #c83691;
+  margin-right: 10px;
+}
+
+#description-section .image-block {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+  margin-top: 50px;
+  align-items: center;
+}
+
+#description-section .image-block img.example-1 {
+  width: 100%;
+  max-width: 540px;
+  height: auto;
+}
+
+#description-section .image-block img.example-2 {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+}
+
+#description-section .image-block .donors {
+  width: 100%;
+  max-width: 266px;
+  height: auto;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.1);
+  transform: translate(16%, -59%);
 }
 
 /* MEDIA QUERIES*/
@@ -220,7 +419,7 @@ a {
 
 @media all and (max-width: 992px) {
   html {
-    font-size: 85%;
+    font-size: 90%;
   }
 }
 
@@ -292,22 +491,39 @@ a {
     display: -webkit-flex;
     display: flex;
   }
+  #description-section .description-container:nth-child(even) .info-block {
+    padding: 0;
+  }
+  #description-section .info-block {
+    width: 100%;
+    align-items: center;
+    padding: 0;
+  }
+  #description-section .info-block h2 {
+    width: auto;
+  }
+  #description-section .image-block {
+    width: 100%;
+  }
 }
 
 @media all and (max-width: 575px) {
   html {
-    font-size: 70%;
+    font-size: 80%;
   }
   #header #nav-bar #logo #icon-logo {
     width: 110px;
   }
   #header #nav-bar #logo span {
-    line-height: 1.9;
-    font-size: 14px;
+    line-height: 2.1;
+    font-size: 13.5px;
   }
   #hero-section .content-container .button-wrapper {
     flex-flow: column nowrap;
     align-items: center;
+  }
+  #description-section .image-block .donors {
+    transform: translate(0, -45%);
   }
 }
 
