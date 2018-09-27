@@ -504,7 +504,7 @@ h4 {
         }
     }
     
-    #fund-wrapper {
+    .fund-wrapper {
         display: -webkit-flex;
         display: flex;
         flex-flow: row wrap;
@@ -706,9 +706,88 @@ h4 {
             }
         }
     }
-
-
 }
+
+/* Section Mobile app styles */
+
+#mobile-app {
+
+    .content-wrapper {
+
+        .description-container {
+            width: 100%;
+            display: -webkit-flex;
+            display: flex;
+            flex-flow: row-wrap;
+            padding-top: 35px;
+
+            .image-block {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                flex-flow: column;
+                width: 50%;
+                margin-top: 50px;
+                align-items: center;
+            }
+
+            .info-block {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                flex-flow: column nowrap;
+                width: 50%;
+                margin-top: 50px;
+                padding-right: 40px;
+            }
+
+            .button-holder {
+                @include display-flex-prefix-properties;
+                flex-flow: row wrap;
+                margin-top: 10px;
+                justify-content: space-around;
+
+                a {
+                    width: 144px;
+                    height: 46px;
+
+                    & + a {
+                        margin-left: 5px;
+                    }
+
+                }
+
+                a:hover  {
+                    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+
+
+        ul {
+            font-size: 	1.1250em;
+            letter-spacing: 0;
+            color: #585858;
+            line-height: 30px;
+            font-weight: 400;
+            margin-top: 16px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .fa-check {
+            color: #c83691;
+            margin-right: 10px;
+        }
+
+    }
+}
+
+
 
 /* MEDIA QUERIES*/
 
@@ -724,6 +803,16 @@ h4 {
         .content-container {
             padding-left: 20px;
             padding-right: 20px;
+        }
+    }
+
+    #mobile-app {
+
+        .button-holder {
+
+            a {
+                margin-top: 20px;
+            }
         }
     }
 }
@@ -846,12 +935,41 @@ h4 {
         }
     }
 
+
     #section-funds {
 
         h2 {
             width: 100%;
             text-align: center;
         }
+    }
+
+
+    section#mobile-app {
+
+        .content-wrapper {
+
+            .description-container {
+                flex-flow: column;
+
+                .info-block {
+                    width:100%;
+                    align-items: center;
+                    padding: 0;
+
+                    h2 {
+                        width: auto;
+                    }
+                }
+                .image-block {
+                    width: 100%;
+                }
+
+            }
+            
+        }
+
+       
     }
 
 }
@@ -920,7 +1038,7 @@ h4 {
 
     #section-funds {
 
-        #fund-wrapper {
+        .fund-wrapper {
 
             .fund-container {
 

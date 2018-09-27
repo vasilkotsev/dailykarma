@@ -490,14 +490,14 @@ h4 {
   width: 397px;
 }
 
-#section-funds #fund-wrapper {
+#section-funds .fund-wrapper {
   display: -webkit-flex;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
 }
 
-#section-funds #fund-wrapper .fund-container {
+#section-funds .fund-wrapper .fund-container {
   display: -webkit-flex;
   display: flex;
   margin-top: 30px;
@@ -512,17 +512,17 @@ h4 {
   transition: .15s;
 }
 
-#section-funds #fund-wrapper .fund-container:hover {
+#section-funds .fund-wrapper .fund-container:hover {
   top: -5px;
   -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
-#section-funds #fund-wrapper .fund-container + .fund-container {
+#section-funds .fund-wrapper .fund-container + .fund-container {
   margin-left: 5px;
 }
 
-#section-funds #fund-wrapper .mini-icon {
+#section-funds .fund-wrapper .mini-icon {
   position: absolute;
   top: 15px;
   left: 15px;
@@ -534,7 +534,7 @@ h4 {
   box-sizing: content-box;
 }
 
-#section-funds #fund-wrapper h3 {
+#section-funds .fund-wrapper h3 {
   font-size: 1.2222rem;
   width: 328px;
   font-family: 'Source Sans Pro';
@@ -549,7 +549,7 @@ h4 {
   text-shadow: 2px 2px 2px #555555;
 }
 
-#section-funds #fund-wrapper h3 .fa.fa-check {
+#section-funds .fund-wrapper h3 .fa.fa-check {
   background-color: #c83691;
   border: solid 1px #ffffff;
   font-size: 10px;
@@ -560,30 +560,30 @@ h4 {
   padding: 2px;
 }
 
-#section-funds #fund-wrapper img.fund-image {
+#section-funds .fund-wrapper img.fund-image {
   width: 100%;
   max-width: 328px;
   height: 328px;
 }
 
-#section-funds #fund-wrapper h4 {
+#section-funds .fund-wrapper h4 {
   padding-top: 25px;
   line-height: 34px;
 }
 
-#section-funds #fund-wrapper .charity-image-holder {
+#section-funds .fund-wrapper .charity-image-holder {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   padding-top: 15px;
 }
 
-#section-funds #fund-wrapper .charity-image-holder img {
+#section-funds .fund-wrapper .charity-image-holder img {
   width: 35px;
   height: 35px;
 }
 
-#section-funds #fund-wrapper p.text-funds {
+#section-funds .fund-wrapper p.text-funds {
   margin-top: 25px;
   font-weight: lighter;
   line-height: 28px;
@@ -591,21 +591,21 @@ h4 {
   color: #585858;
 }
 
-#section-funds #fund-wrapper .donors {
+#section-funds .fund-wrapper .donors {
   margin-top: 20px;
   border: none;
   border-top: solid 1px #e1e1e1;
 }
 
-#section-funds #fund-wrapper .donors .donors__number {
+#section-funds .fund-wrapper .donors .donors__number {
   font-size: 14px;
 }
 
-#section-funds #fund-wrapper .donors .donors__text {
+#section-funds .fund-wrapper .donors .donors__text {
   font-size: 12px;
 }
 
-#section-funds #fund-wrapper .donors .donors__images-wrapper__image {
+#section-funds .fund-wrapper .donors .donors__images-wrapper__image {
   width: 35px;
   height: 35px;
 }
@@ -698,6 +698,79 @@ h4 {
   border: 1px solid #c83691;
 }
 
+/* Section Mobile app styles */
+#mobile-app .content-wrapper .description-container {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row-wrap;
+  padding-top: 35px;
+}
+
+#mobile-app .content-wrapper .description-container .image-block {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+  margin-top: 50px;
+  align-items: center;
+}
+
+#mobile-app .content-wrapper .description-container .info-block {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 50%;
+  margin-top: 50px;
+  padding-right: 40px;
+}
+
+#mobile-app .content-wrapper .description-container .button-holder {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 10px;
+  justify-content: space-around;
+}
+
+#mobile-app .content-wrapper .description-container .button-holder a {
+  width: 144px;
+  height: 46px;
+}
+
+#mobile-app .content-wrapper .description-container .button-holder a + a {
+  margin-left: 5px;
+}
+
+#mobile-app .content-wrapper .description-container .button-holder a:hover {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+#mobile-app .content-wrapper ul {
+  font-size: 1.1250em;
+  letter-spacing: 0;
+  color: #585858;
+  line-height: 30px;
+  font-weight: 400;
+  margin-top: 16px;
+  width: 100%;
+  max-width: 400px;
+}
+
+#mobile-app .content-wrapper .fa-check {
+  color: #c83691;
+  margin-right: 10px;
+}
+
 /* MEDIA QUERIES*/
 @media all and (max-width: 1200px) {
   .content-wrapper {
@@ -707,6 +780,9 @@ h4 {
   #hero-section .content-container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  #mobile-app .button-holder a {
+    margin-top: 20px;
   }
 }
 
@@ -805,6 +881,20 @@ h4 {
     width: 100%;
     text-align: center;
   }
+  section#mobile-app .content-wrapper .description-container {
+    flex-flow: column;
+  }
+  section#mobile-app .content-wrapper .description-container .info-block {
+    width: 100%;
+    align-items: center;
+    padding: 0;
+  }
+  section#mobile-app .content-wrapper .description-container .info-block h2 {
+    width: auto;
+  }
+  section#mobile-app .content-wrapper .description-container .image-block {
+    width: 100%;
+  }
 }
 
 @media all and (max-width: 575px) {
@@ -836,7 +926,7 @@ h4 {
     height: auto;
     width: 35px;
   }
-  #section-funds #fund-wrapper .fund-container + .fund-container {
+  #section-funds .fund-wrapper .fund-container + .fund-container {
     margin-left: 0px;
   }
 }
