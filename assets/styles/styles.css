@@ -165,13 +165,42 @@ h4 {
 }
 
 /*Header styles*/
-#header {
+.header-fixed {
+  background-color: #ffffff;
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  z-index: 12;
+}
+
+.header-absolute {
   position: absolute;
   margin: auto;
   width: 100%;
   color: #ffffff;
 }
 
+.pink-background-color {
+  background-color: #c83691;
+}
+
+.pink-font-color {
+  color: #c83691;
+}
+
+.white-background-color {
+  background: #ffffff;
+}
+
+.white-font-color {
+  color: #ffffff;
+}
+
+.pink-fill-svg {
+  fill: #c83691;
+}
+
+/*Header styles*/
 #header #nav-bar {
   display: -webkit-box;
   display: -moz-box;
@@ -205,8 +234,7 @@ h4 {
   letter-spacing: -1px;
   margin-left: 6px;
   white-space: nowrap;
-  color: #ffffff;
-  padding-top: 4px;
+  line-height: 1.45;
 }
 
 #header #nav-bar .hamburger {
@@ -247,7 +275,6 @@ h4 {
 
 #header #nav-bar .menu a {
   padding: 20px 5px;
-  color: #ffffff;
 }
 
 #header #nav-bar .menu .menu__button {
@@ -263,6 +290,7 @@ h4 {
   padding: 12px 25px 0;
   display: inline-block;
   box-sizing: border-box;
+  color: #ffffff;
 }
 
 #header .separator {
@@ -882,8 +910,8 @@ h4 {
 
 @media all and (max-width: 768px) {
   #header #nav-bar {
-    /* Hamburger icon and mobile menu styles*/
-    /* End of Hamburger icon and mobile menu styles*/
+    /* Hamburger icon and mobile menu custom styles*/
+    /* End of Hamburger icon and mobile menu custom styles*/
   }
   #header #nav-bar .hamburger {
     display: -webkit-flex;
@@ -993,8 +1021,8 @@ h4 {
     width: 110px;
   }
   #header #nav-bar #logo span {
-    line-height: 2.1;
-    font-size: 13.5px;
+    line-height: 1.87;
+    font-size: 14px;
   }
   #hero-section .content-container .button-wrapper {
     flex-flow: column nowrap;
@@ -1054,7 +1082,7 @@ h4 {
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   width: 40px;
   height: 4px;
-  background-color: #ffffff;
+  background: #c83691;
   border-radius: 4px;
   position: absolute;
   transition-property: -webkit-transform;
