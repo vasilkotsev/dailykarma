@@ -43,6 +43,13 @@ h3 {
   letter-spacing: -1.5px;
 }
 
+h4 {
+  font-family: 'Source Sans Pro';
+  font-size: 1.625rem;
+  color: #080808;
+  text-transform: capitalize;
+}
+
 .content-wrapper {
   width: 100%;
   max-width: 1000px;
@@ -408,6 +415,7 @@ h3 {
 /* Statistic-section styles */
 #statistic-section {
   background: url("../images/CF_home_partners.jpg") no-repeat center;
+  background-size: cover;
   padding: 150px 0;
   position: relative;
 }
@@ -444,6 +452,252 @@ h3 {
   margin: auto;
 }
 
+/* Funds-section styles */
+#section-funds {
+  background: #e8f4f6;
+  text-align: center;
+}
+
+#section-funds h2 {
+  width: 193px;
+  text-align: left;
+  margin: auto;
+  padding-top: 100px;
+}
+
+#section-funds .separator-line-heading {
+  position: relative;
+}
+
+#section-funds .separator-line-heading::before, #section-funds .separator-line-heading::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  border-bottom: 1px solid #6b4895;
+  top: 107px;
+  opacity: 0.18;
+}
+
+#section-funds .separator-line-heading::before {
+  right: 100%;
+  margin-right: 38px;
+  width: 353px;
+}
+
+#section-funds .separator-line-heading::after {
+  left: 100%;
+  margin-left: -7px;
+  width: 397px;
+}
+
+#section-funds #fund-wrapper {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+#section-funds #fund-wrapper .fund-container {
+  display: -webkit-flex;
+  display: flex;
+  margin-top: 30px;
+  flex-flow: column wrap;
+  width: 100%;
+  max-width: 328px;
+  text-align: center;
+  background: #ffffff;
+  position: relative;
+  top: 0;
+  -webkit-transition: .15s;
+  transition: .15s;
+}
+
+#section-funds #fund-wrapper .fund-container:hover {
+  top: -5px;
+  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+#section-funds #fund-wrapper .fund-container + .fund-container {
+  margin-left: 5px;
+}
+
+#section-funds #fund-wrapper .mini-icon {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+#section-funds #fund-wrapper h3 {
+  font-size: 1.2222rem;
+  width: 328px;
+  font-family: 'Source Sans Pro';
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 1.55;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  top: 15px;
+  text-shadow: 2px 2px 2px #555555;
+}
+
+#section-funds #fund-wrapper h3 .fa.fa-check {
+  background-color: #c83691;
+  border: solid 1px #ffffff;
+  font-size: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px #888;
+  padding: 2px;
+}
+
+#section-funds #fund-wrapper img.fund-image {
+  width: 100%;
+  max-width: 328px;
+  height: 328px;
+}
+
+#section-funds #fund-wrapper h4 {
+  padding-top: 25px;
+  line-height: 34px;
+}
+
+#section-funds #fund-wrapper .charity-image-holder {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding-top: 15px;
+}
+
+#section-funds #fund-wrapper .charity-image-holder img {
+  width: 35px;
+  height: 35px;
+}
+
+#section-funds #fund-wrapper p.text-funds {
+  margin-top: 25px;
+  font-weight: lighter;
+  line-height: 28px;
+  padding: 0 5px;
+  color: #585858;
+}
+
+#section-funds #fund-wrapper .donors {
+  margin-top: 20px;
+  border: none;
+  border-top: solid 1px #e1e1e1;
+}
+
+#section-funds #fund-wrapper .donors .donors__number {
+  font-size: 14px;
+}
+
+#section-funds #fund-wrapper .donors .donors__text {
+  font-size: 12px;
+}
+
+#section-funds #fund-wrapper .donors .donors__images-wrapper__image {
+  width: 35px;
+  height: 35px;
+}
+
+#section-funds #grounds-block {
+  color: #ffffff;
+  background: #ffffff;
+  margin-top: 12px;
+}
+
+#section-funds #grounds-block .content-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+#section-funds #grounds-block .type-1 {
+  background: #7f3c08;
+}
+
+#section-funds #grounds-block .type-1 .button {
+  padding-bottom: 15px;
+}
+
+#section-funds #grounds-block .type-2 {
+  background: #705623;
+}
+
+#section-funds #grounds-block .type-3 {
+  background: #555555;
+}
+
+#section-funds #grounds-block .type-3 .button {
+  padding-bottom: 15px;
+}
+
+#section-funds #grounds-block .block {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 476px;
+  height: 330px;
+  align-items: center;
+  margin-top: 8px;
+  padding: 0 90px;
+}
+
+#section-funds #grounds-block .block .fa {
+  margin-top: 69px;
+}
+
+#section-funds #grounds-block .block .fa-gift {
+  font-size: 60px;
+}
+
+#section-funds #grounds-block .block .fa-percent {
+  padding-top: 5px;
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  border: 5px solid #ffffff;
+  line-height: -1px;
+  border-radius: 50%;
+}
+
+#section-funds #grounds-block .block .fa-check {
+  font-size: 50px;
+}
+
+#section-funds #grounds-block .block p {
+  font-size: 1.125rem;
+  margin-top: 20px;
+  font-family: "Gotham Medium";
+  line-height: 30px;
+}
+
+#section-funds #grounds-block .block .button {
+  margin-top: 15px;
+  background: transparent;
+  border: 1px solid #c83691;
+}
+
 /* MEDIA QUERIES*/
 @media all and (max-width: 1200px) {
   .content-wrapper {
@@ -459,6 +713,9 @@ h3 {
 @media all and (max-width: 992px) {
   html {
     font-size: 90%;
+  }
+  #section-funds .separator-line-heading::before, #section-funds .separator-line-heading::after {
+    display: none;
   }
 }
 
@@ -544,6 +801,10 @@ h3 {
   #description-section .image-block {
     width: 100%;
   }
+  #section-funds h2 {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media all and (max-width: 575px) {
@@ -574,6 +835,9 @@ h3 {
   #statistic-section .logo-badge-holder .logo-badge {
     height: auto;
     width: 35px;
+  }
+  #section-funds #fund-wrapper .fund-container + .fund-container {
+    margin-left: 0px;
   }
 }
 

@@ -2,8 +2,6 @@
 $primary-color: #ffffff;
 $secondary-background: #e8f4f6;
 
-
-
 @mixin display-flex-prefix-properties {
     display: -webkit-box; 
     display: -moz-box;
@@ -69,6 +67,14 @@ h3 {
     line-height: 38px;
     color: #6b4895;
     letter-spacing: -1.5px;
+}
+
+h4 {
+    font-family: 'Source Sans Pro';
+    font-size: 1.625rem;
+    color:#080808;
+    text-transform: capitalize;
+
 }
 
 .content-wrapper {
@@ -417,6 +423,7 @@ h3 {
 
 #statistic-section {
     background: url("../images/CF_home_partners.jpg") no-repeat center;
+    background-size: cover;
     padding: 150px 0;
     position: relative;
 
@@ -451,8 +458,254 @@ h3 {
             margin: auto;
         }
     }
+}
 
+
+
+/* Funds-section styles */
+
+#section-funds {
+    background: $secondary-background;
+    text-align: center;
+
+    h2 {
+        width: 193px;
+        text-align: left;
+        margin: auto;
+        padding-top: 100px;
+    }
+    // .content-wrapper {
+
+    // }
+
+    .separator-line-heading {
+        position: relative;
+
+        &::before, &::after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            border-bottom: 1px solid #6b4895;
+            top: 107px;
+            opacity: 0.18;
+            
+        }
+
+        &::before {
+            right: 100%;
+            margin-right: 38px;
+            width: 353px;
+        }
+
+        &::after {
+            left: 100%;
+            margin-left: -7px;
+            width: 397px;
+        }
+    }
     
+    #fund-wrapper {
+        display: -webkit-flex;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+
+
+        .fund-container {
+            display: -webkit-flex;
+            display: flex;
+            margin-top: 30px;
+            flex-flow: column wrap;
+            width: 100%;
+            max-width: 328px;
+            text-align: center;
+            background: $primary-color;
+            position: relative;
+            top: 0;
+            -webkit-transition: .15s;
+            transition: .15s;
+
+            &:hover {
+                top: -5px;
+                -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+                box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+            }
+
+            & + .fund-container {
+                margin-left: 5px;
+            }
+
+        }
+
+        .mini-icon {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 2px solid #ffffff;
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+        }
+
+        h3 {
+            font-size: 1.2222rem;
+            width: 328px;
+            font-family: 'Source Sans Pro';
+            font-size: 22px;
+            font-weight: normal;
+            line-height: 1.55;
+            letter-spacing: normal;
+            text-align: center;
+            color: #ffffff;
+            position: absolute;
+            top: 15px;
+            text-shadow: 2px 2px 2px#555555;
+
+            .fa.fa-check {
+                background-color: #c83691;
+                border: solid 1px #ffffff;
+                font-size: 10px;
+                border-radius: 50%;
+                display: inline-block;
+                border-radius: 60px;
+                box-shadow: 0px 0px 2px #888;
+                padding: 2px;
+            }
+        }
+
+        img.fund-image {
+            width: 100%;
+            max-width: 328px;
+            height: 328px;
+        }
+
+        h4 {
+            padding-top: 25px;
+            line-height: 34px;
+        }
+
+        .charity-image-holder {
+            display: flex;
+            flex-flow: row wrap; 
+            justify-content: space-evenly;
+            padding-top: 15px;
+
+            img {
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+        p.text-funds {
+            margin-top: 25px;
+            font-weight: lighter;
+            line-height: 28px;
+            padding: 0 5px;
+            color: #585858;
+        }
+
+        .donors {
+            margin-top: 20px;
+            border: none;
+            border-top: solid 1px #e1e1e1;
+
+            .donors__number {
+                font-size: 14px;
+            }
+
+            .donors__text {
+                font-size: 12px;
+            }
+
+            .donors__images-wrapper__image {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+
+    #grounds-block {
+        color: $primary-color;
+        background: $primary-color;
+        margin-top: 12px;
+
+        .content-container {
+            @include display-flex-prefix-properties;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            width: 100%;
+            max-width:1440px;
+            margin: auto;
+        }
+        
+
+        .type-1 {
+            background:#7f3c08;
+
+            .button {
+                padding-bottom: 15px;
+            }
+        }
+
+        .type-2 {
+            background: #705623; 
+            
+        }
+
+        .type-3 {
+            background :#555555;
+            .button {
+                padding-bottom: 15px;
+            }
+        }
+
+        .block {
+            @include display-flex-prefix-properties;
+            flex-flow: column nowrap;
+            width: 476px;
+            height: 330px;
+            align-items: center;
+            margin-top: 8px;
+            padding: 0 90px;
+
+            .fa {
+                margin-top: 69px;
+            }
+
+            .fa-gift {
+                font-size: 60px;
+            }
+
+            .fa-percent {
+                padding-top: 5px;
+                font-size: 40px;
+                width: 60px;
+                height: 60px;
+                border: 5px solid #ffffff;
+                line-height: -1px;
+                border-radius: 50%;
+            }
+
+            .fa-check {
+                font-size: 50px;
+            }
+
+            p {
+                font-size: 1.125rem;
+                margin-top: 20px;
+                font-family: "Gotham Medium"; 
+                line-height: 30px;
+            }
+
+            .button {
+                margin-top: 15px;
+                background: transparent;
+                border: 1px solid #c83691;
+            }
+        }
+    }
 
 
 }
@@ -480,6 +733,16 @@ h3 {
      
     html {
         font-size: 90%;
+    }
+
+    #section-funds {
+
+        .separator-line-heading {
+            
+            &::before, &::after {
+                display: none;
+            }
+        }
     }
 }
 
@@ -583,7 +846,16 @@ h3 {
         }
     }
 
+    #section-funds {
+
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
 }
+
 
 
 @media all and (max-width: 575px) {
@@ -645,9 +917,20 @@ h3 {
             }
         }
     }
+
+    #section-funds {
+
+        #fund-wrapper {
+
+            .fund-container {
+
+                & + .fund-container {
+                    margin-left: 0px;
+                }
+            }
+        }    
+    }
 }
-
-
 
 /* END OF MEDIA QUERIES*/
 
