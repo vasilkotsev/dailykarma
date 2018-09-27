@@ -215,10 +215,10 @@ h4 {
                 font-family: "Gotham Book";
                 font-size: 18px;
                 letter-spacing: -1px;
-                line-height: 1.45;
                 margin-left: 6px;
                 white-space: nowrap;
                 color: $primary-color;
+                padding-top: 4px;
 
             }     
         }
@@ -630,6 +630,7 @@ h4 {
         color: $primary-color;
         background: $primary-color;
         margin-top: 12px;
+        padding-bottom: 33px;
 
         .content-container {
             @include display-flex-prefix-properties;
@@ -704,6 +705,7 @@ h4 {
                 background: transparent;
                 border: 1px solid #c83691;
             }
+
         }
     }
 }
@@ -711,7 +713,7 @@ h4 {
 /* Section Mobile app styles */
 
 #mobile-app {
-
+    padding-bottom: 85px;
     .content-wrapper {
 
         .description-container {
@@ -786,6 +788,81 @@ h4 {
 
     }
 }
+
+
+#footer {
+    background: #2c2e83;
+    color: $primary-color;
+    padding: 30px 0 60px;
+    font-weight: 300;
+    
+
+
+    .content-wrapper {
+        @include display-flex-prefix-properties;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    h2 {
+        color: $primary-color;
+    }
+
+    .footer-col {
+        width: 100%;
+        max-width: 250px;
+        margin-top: 30px;
+        @include display-flex-prefix-properties;
+        flex-flow: column nowrap;
+
+        #footer-logo {
+            margin-top: 34px;
+        }
+
+        p {
+            margin-top: 16px;
+            line-height: 28px;
+            padding-right: 30px;
+        }
+
+        ul {
+            margin-top: 25px;
+
+            li {
+                @include display-flex-prefix-properties;
+
+                a {
+                    color: $primary-color;
+                    line-height: 28px;
+                    font-weight: 300;
+                }
+            }
+            
+        }
+
+        .secured-logo {
+            max-width: 120px;
+            height: auto;
+            margin-top: 34px;
+        }
+
+        .contact-logo-holder {
+            @include display-flex-prefix-properties;
+            justify-content: space-around;
+            flex-flow: row wrap;
+            margin-top: 34px;
+            justify-content: space-between;
+            width: 110px;
+        }
+
+
+    }
+}
+
+
+
+
+
 
 
 
@@ -909,6 +986,8 @@ h4 {
     }
 
     #description-section {
+
+        text-align: center;
 
         .description-container {
 
